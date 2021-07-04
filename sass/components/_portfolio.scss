@@ -1,0 +1,32 @@
+.portfolio {
+  padding-top: $section-indent;
+  padding-bottom: $section-indent;
+
+  background-color: $primary-white;
+  &__list {
+    @extend %flexible-jc;
+    margin-bottom: 50px;
+
+    @extend %transition-bgc-c-br;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+.portfolio {
+  &__list {
+    .portfolio {
+      &__button {
+        &:hover,
+        &:focus {
+          @include color($accent-color, $primary-white);
+
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

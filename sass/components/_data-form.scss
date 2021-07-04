@@ -1,0 +1,78 @@
+.data-form {
+  padding: 40px;
+  &__subtitle {
+    @include font(700, 20px, 1.15, 0.03em);
+
+    text-align: center;
+
+    margin-bottom: 12px;
+    color: getColor-text("primary");
+  }
+  &__input {
+    display: block;
+
+    @include size(100%, 40px);
+
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+
+    @include border($form-border-input);
+
+    @extend %transition-bc-fill;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+    }
+  }
+  &__description {
+    display: block;
+    margin-bottom: 10px;
+
+    @include font(400, 12px, 1.171, 0.01em);
+
+    color: getColor-text("secondary");
+    &--textarea {
+      margin-bottom: 20px;
+    }
+  }
+  &__input-wrapper {
+    display: block;
+    position: relative;
+    margin-top: 4px;
+  }
+  &__svg {
+    @include position(absolute, 50%, 12px);
+
+    transform: translateY(-50%);
+
+    @include size(18px, 18px);
+  }
+}
+
+.data-form {
+  &__input:focus {
+    + .data-form {
+      &__icon {
+        fill: $accent-color;
+      }
+    }
+  }
+}
+
+.input {
+  &__comment {
+    @include size(100%, 120px);
+
+    padding-left: 16px;
+    margin-top: 4px;
+    resize: none;
+
+    &::placeholder {
+      @include font(400, 12px, 1.166, 0.01em);
+
+      color: $comment-placeholder;
+    }
+  }
+}

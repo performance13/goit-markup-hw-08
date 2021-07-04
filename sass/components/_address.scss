@@ -1,0 +1,34 @@
+.address {
+  &__list {
+    font-style: normal;
+
+    @include font();
+  }
+  &__item {
+    @extend %transition-color;
+
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.address {
+  &__link {
+    &--place {
+      color: $primary-white;
+    }
+    &--connection {
+      color: $address-subscribe-color;
+    }
+  }
+}
+
+.address {
+  &__link {
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

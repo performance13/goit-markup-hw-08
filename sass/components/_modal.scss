@@ -1,0 +1,23 @@
+.modal {
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: $primary-white;
+
+  @extend %shadow;
+}
+
+.backdrop {
+  &__modal {
+    @include position(absolute, 50%, 50%);
+
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+  }
+}
+
+.button-close {
+  &__icon {
+    @include size(11px, 11px);
+  }
+}

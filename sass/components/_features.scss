@@ -1,0 +1,72 @@
+.features {
+  padding-top: 90px;
+  padding-bottom: $section-indent;
+  background-color: $primary-white;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__subtitle {
+    @include font(700, 14px, 1.142, 0.03em);
+
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.714;
+    color: getColor-text("secondary");
+  }
+}
+
+.features {
+  &__icon {
+    &::before {
+      content: "";
+      display: block;
+      height: 120px;
+      margin-bottom: 30px;
+
+      @include background-picture();
+    }
+  }
+}
+
+//решил использовать Дерективу @each (для этого добавил классы в index.html)>> находится в partials  (фрагменте)  _each.scss
+
+// .features {
+//   &__icon {
+//     &--attention {
+//       &::before {
+//         background-image: url(../images/group1.svg);
+//       }
+//     }
+//     &--punctuality {
+//       &::before {
+//         background-image: url(../images/group2.svg);
+//       }
+//     }
+//     &--planning {
+//       &::before {
+//         background-image: url(../images/group3.svg);
+//       }
+//     }
+//     &--technologies {
+//       &::before {
+//         background-image: url(../images/group4.svg);
+//       }
+//     }
+//   }
+// }
+
+// @each $icon in group1, group2, group3, group4 {
+//   .icon__#{$icon} {
+//     &::before {
+//       background-image: url("../images/#{$icon}.svg");
+//     }
+//   }
+// }

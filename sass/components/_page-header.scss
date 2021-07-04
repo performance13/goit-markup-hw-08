@@ -1,0 +1,9 @@
+.page-header {
+  background-color: $primary-white;
+  &__container {
+    @extend %flexible-ai;
+  }
+  &__border {
+    border-bottom: 1px solid $line-header;
+  }
+}
