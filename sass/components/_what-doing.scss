@@ -1,38 +1,44 @@
 .what-doing {
-  padding-bottom: $section-indent;
-  background-color: $primary-white;
-  &__title {
-    @include font(700, 14px, 1.142, 0.03em);
-  }
-  &__subtitle {
-    margin-bottom: 50px;
+  display: none;
 
-    @include font(700, 36px, 1.166, 0.03em);
-
-    text-align: center;
-  }
-  &__list {
+  @media screen and(min-width:1200px) {
     display: flex;
-  }
-  &__item {
-    position: relative;
-    &:not(:last-child) {
-      margin-right: 30px;
+
+    padding-bottom: $section-indent;
+    background-color: $primary-white;
+    &__title {
+      @include font(700, 14px, 1.142, 0.03em);
     }
-  }
-  &__direction {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    transform: translate(0%, 0%);
+    &__subtitle {
+      margin-bottom: 50px;
 
-    @include size(370px, 70px);
+      @include font(700, 36px, 1.166, 0.03em);
 
-    padding-top: 27px;
-    padding-bottom: 27px;
+      text-align: center;
+    }
+    &__list {
+      display: flex;
+    }
+    &__item {
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    &__direction {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      transform: translate(0%, 0%);
 
-    text-align: center;
+      @include size(370px, 70px);
 
-    @include color($bgc-what-doing-title, $primary-white);
+      padding-top: 27px;
+      padding-bottom: 27px;
+
+      text-align: center;
+
+      @include color($bgc-what-doing-title, $primary-white);
+    }
   }
 }
