@@ -1,29 +1,49 @@
 .team {
-  padding-top: $section-indent;
-  padding-bottom: $section-indent;
+  padding-top: 66px;
+  padding-bottom: 66px;
 
   background-color: $bgc-team-portfolio-btn;
-  &__subtitle {
-    margin-bottom: 50px;
 
-    @include font(700, 36px, 1.166, 0.03em);
-
-    text-align: center;
+  @media screen and(min-width:768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
+
+  @media screen and(min-width:1200px) {
+    padding-top: $section-indent;
+    padding-bottom: $section-indent;
+  }
+
+  &__subtitle {
+    margin-bottom: 32px;
+    @include font(700, 28px, 1.166, 0.03em);
+    text-align: center;
+
+    @media screen and(min-width:768px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and(min-width:1200px) {
+      margin-bottom: 50px;
+      @include font(700, 36px, 1.166, 0.03em);
+    }
+  }
+
   &__list {
     display: flex;
-  }
-}
+    flex-wrap: wrap;
+    justify-content: center;
 
-.team {
-  &__list {
-    .member-card + .member-card {
-      margin-left: 30px;
+    @media screen and(min-width:768px) {
+      margin-right: calc(-1 * 30px);
+      margin-bottom: calc(-1 * 30px);
     }
   }
 }
 
 .member-card {
+  margin-bottom: 30px;
+
   background-color: $primary-white;
 
   @extend %shadow;
@@ -44,4 +64,17 @@
     color: getColor-text("secondary");
     text-align: center;
   }
+  @media screen and(min-width:768px) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
+
+//this option was changed for the better >>>
+// .team {
+//   &__list {
+//     .member-card + .member-card {
+//       margin-left: 30px;
+//     }
+//   }
+// }
