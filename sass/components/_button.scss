@@ -1,8 +1,22 @@
+// .hero {
+//   &__button {
+//     display: block;
+//     margin: auto;
+
+//     @extend %button;
+
+//     @extend %transition-bgc;
+
+//     &:hover,
+//     &:focus {
+//       background-color: $active-accent;
+//     }
+//   }
+// }
+
+// !
 .hero {
   &__button {
-    display: block;
-    margin: auto;
-
     @extend %button;
 
     @extend %transition-bgc;
@@ -13,6 +27,7 @@
     }
   }
 }
+// !
 
 .portfolio {
   &__button {
