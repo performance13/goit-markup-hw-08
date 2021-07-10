@@ -1,53 +1,59 @@
+// .contacts {
+//   &__list {
+//     display: flex;
+
+//     @include font(500, 14px, 1.142, 0.02em);
+//   }
+// }
+
+// .contacts {
+//   &__list {
+//     .contacts {
+//       &__item {
+//         + .contacts {
+//           &__item {
+//             margin-left: 50px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .site-nav {
+//   &__contacts {
+//     margin-left: auto;
+//   }
+// }
+
+// .contacts {
+//   &__item {
+//     @extend %transition-color;
+//   }
+// }
+
+// .contacts {
+//   &__link {
+//     @extend %flexible-ai;
+
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     color: getColor-text("secondary");
+//     &:hover,
+//     &:focus {
+//       color: $accent-color;
+//     }
+//   }
+//   &__icon {
+//     fill: currentColor;
+//     display: block;
+//     margin-right: 10px;
+//   }
+// }
+
+// !
 .contacts {
-  &__list {
-    display: flex;
-
-    @include font(500, 14px, 1.142, 0.02em);
-  }
+  display: none;
 }
-
-.contacts {
-  &__list {
-    .contacts {
-      &__item {
-        + .contacts {
-          &__item {
-            margin-left: 50px;
-          }
-        }
-      }
-    }
-  }
-}
-
-.site-nav {
-  &__contacts {
-    margin-left: auto;
-  }
-}
-
-.contacts {
-  &__item {
-    @extend %transition-color;
-  }
-}
-
-.contacts {
-  &__link {
-    @extend %flexible-ai;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    color: getColor-text("secondary");
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-  }
-  &__icon {
-    fill: currentColor;
-    display: block;
-    margin-right: 10px;
-  }
-}
+// !
