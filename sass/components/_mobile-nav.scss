@@ -1,0 +1,148 @@
+.mobile-nav {
+  position: absolute;
+  background-color: $primary-white;
+  top: 0;
+  @include size(100vw, 100vh);
+  .container {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and(min-width: 480px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
+.mobile-nav .is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  // display: none;
+}
+
+.mobile-menu {
+  &__item {
+    margin-bottom: 40px;
+
+    @include font(500, 40px, 1.175, 0.02em);
+    @extend %transition-color;
+  }
+}
+
+.mobile-menu {
+  &__link {
+    &--active-page {
+      color: $accent-color;
+    }
+  }
+}
+
+.mobile-menu {
+  &__link {
+    color: getColor-text("primary");
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.mobile-contacts {
+  &__item {
+    &:first-child {
+      margin-bottom: 40px;
+      @include font(500, 26px, 1.166, 0.02em);
+    }
+  }
+}
+.mobile-contacts {
+  &__item {
+    &:last-child {
+      margin-bottom: 65px;
+      @include font(500, 24px, 1.166, 0.02em);
+    }
+  }
+}
+
+.mobile-contacts {
+  &__link {
+    &:hover,
+    &:focus {
+      color: $active-accent;
+    }
+  }
+}
+
+.link {
+  &--color {
+    &--accent {
+      color: $accent-color;
+    }
+    &--hide {
+      color: getColor-text("secondary");
+    }
+  }
+}
+
+.mobile-social-links {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and(min-width: 480px) {
+      width: 353px;
+    }
+  }
+}
+
+.mobile-social-links {
+  &__link {
+    display: block;
+    @include font(500, 14px, 1.142, 0.02em);
+
+    padding: 10px 0;
+    &:hover,
+    &:focus {
+      color: $active-accent;
+    }
+  }
+}
+
+.pseudo {
+  &:not(:first-child) {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 16px;
+      bottom: 59px;
+      margin-left: -10px;
+      border: 1px solid getColor-text("pseudo");
+    }
+    @media screen and(min-width: 480px) {
+      &:not(:first-child) {
+        &::after {
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+}
+
+// .pseudo {
+//   &:not(:first-child) {
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       width: 22px;
+//       height: 1px;
+//       border: 1px solid getColor-text("pseudo");
+//       transform: rotate(90deg);
+//       margin-left: -20px;
+//       bottom: 56px;
+//     }
+//   }
+// }
