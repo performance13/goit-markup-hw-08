@@ -52,8 +52,59 @@
 //   }
 // }
 
-// !
 .contacts {
-  display: none;
+  &__list {
+    display: none;
+    @media screen and(min-width:768px) {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 19px;
+      right: 15px;
+
+      @include font(500, 14px, 1.142, 0.02em);
+    }
+  }
 }
-// !
+
+.contacts {
+  &__list {
+    margin-right: 15px;
+    .contacts {
+      &__item {
+        + .contacts {
+          &__item {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contacts {
+  &__item {
+    @extend %transition-color;
+  }
+}
+
+.contacts {
+  &__link {
+    @extend %flexible-ai;
+
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+
+    color: getColor-text("secondary");
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__icon {
+    fill: currentColor;
+    display: block;
+    //  margin-right: 10px;
+    margin-right: 8px;
+  }
+}

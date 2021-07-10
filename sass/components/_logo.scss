@@ -47,21 +47,21 @@
 
 .page-header {
   &__logo {
+    position: absolute;
+    top: -4px;
+    left: 15px;
+
     padding-top: 21px;
     padding-bottom: 21px;
+    @media screen and(min-width: 768px) {
+      top: 5px;
+      left: 15px;
+    }
   }
 
-  // @media screen and(min-width: 480px) {
-  //   padding-top: 21px;
-  //   padding-bottom: 21px;
-  // }
-  @media screen and(min-width: 768px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: 1200px) {
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
   }
 }
 
