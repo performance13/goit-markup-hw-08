@@ -1419,6 +1419,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .project__list {
+    justify-content: left;
+  }
+}
+
 .backdrop {
   width: 100%;
   height: 100%;
