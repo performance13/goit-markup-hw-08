@@ -60,7 +60,7 @@
       flex-direction: column;
       position: absolute;
       top: 19px;
-      right: 15px;
+      right: -15px;
 
       @include font(500, 14px, 1.142, 0.02em);
     }
@@ -70,11 +70,17 @@
 .contacts {
   &__list {
     margin-right: 15px;
+    @media screen and(min-width:768px) {
+      margin-right: 0;
+    }
     .contacts {
       &__item {
         + .contacts {
           &__item {
             margin-top: 10px;
+            @media screen and(min-width:1200px) {
+              margin-top: 0;
+            }
           }
         }
       }
@@ -82,27 +88,39 @@
   }
 }
 
-.contacts__list {
-  @media screen and(min-width:1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-direction: row;
+.contacts {
+  &__list {
+    @media screen and(min-width:1200px) {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      flex-direction: row;
+      position: absolute;
+      top: 1px;
+      right: -178px;
+    }
   }
 }
 
 .contacts {
   &__item {
     @extend %transition-color;
+    &:first-child {
+      margin-right: 30px;
+    }
   }
 }
 
 .contacts {
   &__link {
     @extend %flexible-ai;
-
-    // padding-top: 32px;
-    // padding-bottom: 32px;
+    @media screen and(min-width:1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      // &:first-child {
+      //   margin-right: 30px;
+      // }
+    }
 
     color: getColor-text("secondary");
     &:hover,

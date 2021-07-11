@@ -111,12 +111,23 @@
     @extend %button;
 
     @extend %transition-bgc;
+    @media screen and(min-width:768px) {
+      // display: inline-block;
+      // text-align: center;
+      // margin: 0 auto;
+
+      margin: 0 auto;
+      display: flex;
+    }
+
+    @media screen and(min-width:1200px) {
+      margin-left: 12px;
+    }
 
     &:hover,
     &:focus {
       background-color: $active-accent;
     }
-    // margin-left: 12px;
   }
 }
 

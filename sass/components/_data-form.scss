@@ -25,47 +25,48 @@
 
     margin-bottom: 12px;
   }
-}
-&__input {
-  display: block;
 
-  @include size(100%, 40px);
+  &__input {
+    display: block;
 
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 42px;
+    @include size(100%, 40px);
 
-  @include border($form-border-input);
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
 
-  @extend %transition-bc-fill;
+    @include border($form-border-input);
 
-  &:hover,
-  &:focus {
-    border-color: $accent-color;
+    @extend %transition-bc-fill;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+    }
   }
-}
-&__description {
-  display: block;
-  margin-bottom: 10px;
+  &__description {
+    display: block;
+    margin-bottom: 10px;
 
-  @include font(400, 12px, 1.171, 0.01em);
+    @include font(400, 12px, 1.171, 0.01em);
 
-  color: getColor-text("secondary");
-  &--textarea {
-    margin-bottom: 20px;
+    color: getColor-text("secondary");
+    &--textarea {
+      margin-bottom: 20px;
+    }
   }
-}
-&__input-wrapper {
-  display: block;
-  position: relative;
-  margin-top: 4px;
-}
-&__svg {
-  @include position(absolute, 50%, 12px);
+  &__input-wrapper {
+    display: block;
+    position: relative;
+    margin-top: 4px;
+  }
+  &__svg {
+    @include position(absolute, 50%, 12px);
 
-  transform: translateY(-50%);
+    transform: translateY(-50%);
 
-  @include size(18px, 18px);
+    @include size(18px, 18px);
+  }
 }
 
 .data-form {

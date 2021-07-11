@@ -147,6 +147,7 @@
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
+    // flex-grow: 1;
 
     border-right: 1px solid $border-card;
     border-bottom: 1px solid $border-card;
@@ -179,6 +180,14 @@
           transition: 250ms $function;
         }
       }
+    }
+  }
+}
+
+.card {
+  &__title {
+    &--size--stretch {
+      margin-bottom: 40px;
     }
   }
 }

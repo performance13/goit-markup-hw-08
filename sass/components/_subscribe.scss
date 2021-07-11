@@ -3,7 +3,9 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    // margin-left: 93px;
+    @media screen and(min-width:1200px) {
+      margin-left: 93px;
+    }
   }
 }
 
@@ -17,13 +19,14 @@
 
     color: $primary-white;
     margin-bottom: 20px;
+    @media screen and(min-width:1200px) {
+      text-align: left;
+    }
   }
   &__input {
     @include size(100%, 50px);
 
     margin-bottom: 20px;
-
-    // @include size(358px, 50px);
 
     padding: 15px 16px;
 
@@ -47,6 +50,9 @@
       margin-left: 10px;
       vertical-align: middle;
     }
+    @media screen and(min-width:1200px) {
+      margin: 0;
+    }
   }
 }
 
@@ -57,7 +63,14 @@
       margin-left: auto;
       margin-right: auto;
       @include size(450px, 50px);
-      // @include size(358px, 50px);
+    }
+    @media screen and(min-width:1200px) {
+      @include size(358px, 50px);
+    }
+  }
+  &__wrapper {
+    @media screen and(min-width:1200px) {
+      display: flex;
     }
   }
 }
