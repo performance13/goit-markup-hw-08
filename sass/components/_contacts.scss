@@ -82,6 +82,15 @@
   }
 }
 
+.contacts__list {
+  @media screen and(min-width:1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+  }
+}
+
 .contacts {
   &__item {
     @extend %transition-color;
@@ -104,7 +113,9 @@
   &__icon {
     fill: currentColor;
     display: block;
-    //  margin-right: 10px;
     margin-right: 8px;
+    @media screen and(min-width:1200px) {
+      margin-right: 10px;
+    }
   }
 }
