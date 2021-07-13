@@ -250,7 +250,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-header__logo {
-    top: 5px;
+    top: 15px;
     left: 15px;
   }
 }
@@ -499,10 +499,10 @@ body {
 @media screen and (min-width: 768px) {
   .site-nav__list {
     position: absolute;
-    top: 2px;
-    left: 145px;
+    top: 6px;
+    left: 147px;
     display: flex;
-    margin-left: 93px;
+    margin-left: 88px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
@@ -547,23 +547,10 @@ body {
   .contacts__list {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 19px;
-    right: -15px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.02em;
-  }
-}
-
-.contacts__list {
-  margin-right: 15px;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts__list {
-    margin-right: 0;
   }
 }
 
@@ -588,6 +575,12 @@ body {
 
 .contacts__item:first-child {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item:first-child {
+    margin-right: 0;
+  }
 }
 
 .contacts__link {
