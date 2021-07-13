@@ -1,9 +1,7 @@
 .modal {
   background-color: $primary-white;
   @extend %shadow;
-
-  min-width: 93%;
-  min-height: 93%;
+  min-width: 95%;
 
   @media screen and(min-width:480px) {
     min-width: 450px;
