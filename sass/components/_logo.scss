@@ -28,7 +28,7 @@
 .logo {
   font-family: Raleway;
 
-  @include font(700, 16px, 1.173, 0.03em);
+  @include font(700, 24px, 1.174, 0.03em);
 
   color: $black-color;
   &--accent {
@@ -36,9 +36,9 @@
   }
 }
 
-@media screen and(min-width: 480px) {
-  @include font(700, 26px, 1.173, 0.03em);
-}
+// @media screen and(min-width: 480px) {
+//   @include font(700, 24px, 1.174, 0.03em);
+// }
 @media screen and(min-width: 768px) {
   &--accent {
     color: $accent-color;
@@ -48,11 +48,11 @@
 .page-header {
   &__logo {
     position: absolute;
-    top: 0px;
+    top: 1px;
     left: 15px;
 
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding: 15px 0;
+
     @media screen and(min-width: 768px) {
       top: 5px;
       left: 15px;
