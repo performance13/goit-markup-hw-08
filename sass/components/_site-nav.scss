@@ -59,10 +59,10 @@
     display: none;
     @media screen and(min-width:768px) {
       position: absolute;
-      top: 2px;
-      left: 145px;
+      top: 6px;
+      left: 147px;
       display: flex;
-      margin-left: 93px;
+      margin-left: 88px;
 
       @include font(500, 14px, 1.142, 0.02em);
     }
