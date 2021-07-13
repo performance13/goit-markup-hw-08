@@ -77,6 +77,7 @@ a {
 .hero__button, .subscribe-form__button, .data-form__button {
   min-width: 200px;
   height: 50px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
@@ -176,7 +177,7 @@ body {
 
 .img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -214,7 +215,9 @@ body {
 }
 
 .page-header__container {
+  position: relative;
   display: flex;
+  max-width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -222,21 +225,14 @@ body {
 .logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.173;
+  font-size: 24px;
+  line-height: 1.174;
   letter-spacing: 0.03em;
   color: #000000;
 }
 
 .logo--accent {
   color: #2196f3;
-}
-
-@media screen and (min-width: 480px) {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.173;
-  letter-spacing: 0.03em;
 }
 
 @media screen and (min-width: 768px) {
@@ -247,10 +243,9 @@ body {
 
 .page-header__logo {
   position: absolute;
-  top: 0px;
+  top: 1px;
   left: 15px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding: 15px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -489,7 +484,6 @@ body {
 
 .data-form__button {
   display: block;
-  padding: 10px 55px 10px 56px;
   margin: auto;
 }
 
@@ -626,7 +620,7 @@ body {
 .hero {
   width: 100%;
   height: 400px;
-  padding-top: 118px;
+  padding: 118px 0;
   text-align: center;
   background-color: #2f303a;
   color: #ffffff;
@@ -640,9 +634,9 @@ body {
 }
 
 .hero__title {
-  margin-bottom: 37px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 21px;
   line-height: 1.615;
@@ -655,7 +649,6 @@ body {
     font-size: 26px;
     line-height: 1.615;
     letter-spacing: 0.06em;
-    margin-bottom: 30px;
     width: 360px;
   }
 }
@@ -715,15 +708,8 @@ body {
 .features {
   height: 100%;
   background-color: #ffffff;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -735,12 +721,6 @@ body {
 
 .features__list {
   margin-bottom: calc(-1 * 30px);
-}
-
-@media screen and (min-width: 480px) {
-  .features__list {
-    margin-bottom: calc(-1 * 36px);
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -765,12 +745,6 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .features__item {
-    margin-bottom: 36px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .features__item {
     min-width: 354px;
@@ -789,29 +763,16 @@ body {
 
 .features__subtitle {
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
-  margin-bottom: 5px;
-}
-
-@media screen and (min-width: 480px) {
-  .features__subtitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.03em;
-    display: inline-block;
-    width: 360px;
-    margin-bottom: 17px;
-  }
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .features__subtitle {
     text-align: left;
-    margin-bottom: 10px;
   }
 }
 
@@ -916,18 +877,12 @@ body {
 }
 
 .team__subtitle {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.166;
+  line-height: 1.178;
   letter-spacing: 0.03em;
   text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .team__subtitle {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -954,12 +909,33 @@ body {
 }
 
 .member-card {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   margin-bottom: 30px;
   background-color: #ffffff;
 }
 
+@media screen and (min-width: 320px) {
+  .member-card {
+    width: 290px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .member-card {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .member-card {
+    width: 354px;
+  }
+}
+
 .member-card__meta {
-  padding: 30px 32px 8px 32px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -989,7 +965,8 @@ body {
 
 .social-links__list {
   display: flex;
-  padding: 8px 32px 30px 32px;
+  justify-content: center;
+  padding: 16px 0px 24px 0px;
 }
 
 .social-links__list .social-links__item + .social-links__item {
@@ -1035,15 +1012,8 @@ body {
 }
 
 .client {
-  padding-top: 66px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   background-color: #ffffff;
-}
-
-@media screen and (min-width: 480px) {
-  .client {
-    padding-top: 60px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1191,7 +1161,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.174;
+  line-height: 1.714;
   letter-spacing: 0.03em;
 }
 
@@ -1360,7 +1330,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 49px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.555;
@@ -1435,8 +1405,7 @@ body {
 
 .modal {
   background-color: #ffffff;
-  min-width: 93%;
-  min-height: 93%;
+  min-width: 95%;
 }
 
 @media screen and (min-width: 480px) {
@@ -1483,7 +1452,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.142;
+  line-height: 1.172;
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-bottom: 20px;
@@ -1558,17 +1527,19 @@ body {
 
 .data-form {
   width: 90%;
-  height: 90%;
+  margin: auto;
 }
 
 @media screen and (min-width: 320px) {
   .data-form {
-    padding: 20px;
+    padding: 40px 0;
   }
 }
 
 @media screen and (min-width: 480px) {
   .data-form {
+    width: 450px;
+    height: 609px;
     padding: 40px;
   }
 }
@@ -1576,6 +1547,7 @@ body {
 .data-form__subtitle {
   color: #212121;
   text-align: center;
+  margin-bottom: 12px;
 }
 
 @media screen and (min-width: 320px) {
@@ -1594,7 +1566,6 @@ body {
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
-    margin-bottom: 12px;
   }
 }
 
@@ -1673,7 +1644,7 @@ body {
   display: block;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.174;
   letter-spacing: 0.03em;
   font-style: normal;
@@ -1692,7 +1663,7 @@ body {
 .agreement__link {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.174;
   letter-spacing: 0.03em;
   text-decoration: underline;
