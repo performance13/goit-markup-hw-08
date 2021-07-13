@@ -15,7 +15,9 @@
   &__container {
     // @extend %flexible-ai;
 
+    position: relative;
     display: flex;
+    max-width: 100%;
     align-items: center;
     justify-content: space-between;
   }
