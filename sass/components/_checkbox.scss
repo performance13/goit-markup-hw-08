@@ -3,7 +3,7 @@
     display: block;
     margin-bottom: 30px;
 
-    @include font();
+    @include font(400, 12px, 1.174, 0.03em);
 
     font-style: normal;
     text-align: center;
@@ -24,7 +24,7 @@
   &__link {
     font-style: normal;
 
-    @include font();
+    @include font(400, 12px, 1.174, 0.03em);
 
     text-decoration: underline;
     color: $accent-color;
