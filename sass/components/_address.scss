@@ -3,7 +3,7 @@
     text-align: center;
     font-style: normal;
 
-    @include font();
+    @include font(400, 14px, 1.714, 0.03em);
 
     @media screen and(min-width: 1200px) {
       text-align: left;
