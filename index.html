@@ -52,7 +52,7 @@
             </li>
 
             <li class="site-nav__item">
-              <a href="#" class="site-nav__link">Контакты</a>
+              <a href="#contact" class="site-nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -91,93 +91,87 @@
         </button>
       </div>
 
-      <div
-        class="mobile-nav is-hidden menu-container js-menu-container"
-        id="mobile-menu"
-      >
-        <div class="container">
-          <button
-            type="button"
-            class="button button__close-menu menu-toggle js-close-menu"
-          >
-            <svg width="24" height="16" class="menu__icon">
-              <use href="./images/icons.svg#close-icon"></use>
-            </svg>
-          </button>
-          <nav class="mobile-menu">
-            <ul class="mobile-menu__list">
-              <li class="mobile-menu__item">
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button
+          type="button"
+          class="button button__close-menu menu-toggle js-close-menu"
+        >
+          <svg width="24" height="16" class="menu__icon">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu__list mobile-menu">
+          <li class="mobile-menu__item">
+            <a
+              href="index.html"
+              class="mobile-menu__link mobile-menu__link--active-page"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="portfolio.html" class="mobile-menu__link">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#contact" class="mobile-menu__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="mobile-nav__bottom-container">
+          <div class="mobile-contacts">
+            <ul class="mobile-contacts__list">
+              <li class="mobile-contacts__item">
                 <a
-                  href="#"
-                  class="mobile-menu__link mobile-menu__link--active-page"
-                  >Студия</a
-                >
+                  href="tel:+380961111111"
+                  class="mobile-contacts__link link--color--accent"
+                  >+38 096 111 11 11
+                </a>
               </li>
-              <li class="mobile-menu__item">
-                <a href="#" class="mobile-menu__link">Портфолио</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a href="#" class="mobile-menu__link">Контакты</a>
+
+              <li class="mobile-contacts__item contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-contacts__link link--color--hide"
+                  >info@devstudio.com
+                </a>
               </li>
             </ul>
-          </nav>
+          </div>
 
-          <div class="mobile-nav__bottom-container">
-            <div class="mobile-contacts">
-              <ul class="mobile-contacts__list">
-                <li class="mobile-contacts__item">
-                  <a
-                    href="tel:+380961111111"
-                    class="mobile-contacts__link link--color--accent"
-                    >+38 096 111 11 11
-                  </a>
-                </li>
+          <div class="mobile-social-links">
+            <ul class="mobile-social-links__list">
+              <li class="mobile-social-links__item pseudo">
+                <a
+                  href="#"
+                  class="mobile-social-links__link link--color--accent"
+                  >Instagram
+                </a>
+              </li>
 
-                <li class="mobile-contacts__item contacts__item">
-                  <a
-                    href="mailto:info@devstudio.com"
-                    class="mobile-contacts__link link--color--hide"
-                    >info@devstudio.com
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="mobile-social-links__item pseudo">
+                <a
+                  href="#"
+                  class="mobile-social-links__link link--color--accent"
+                  >Twitter
+                </a>
+              </li>
 
-            <div class="mobile-social-links">
-              <ul class="mobile-social-links__list">
-                <li class="mobile-social-links__item pseudo">
-                  <a
-                    href="#"
-                    class="mobile-social-links__link link--color--accent"
-                    >Instagram
-                  </a>
-                </li>
+              <li class="mobile-social-links__item pseudo">
+                <a
+                  href="#"
+                  class="mobile-social-links__link link--color--accent"
+                  >Facebook
+                </a>
+              </li>
 
-                <li class="mobile-social-links__item pseudo">
-                  <a
-                    href="#"
-                    class="mobile-social-links__link link--color--accent"
-                    >Twitter
-                  </a>
-                </li>
-
-                <li class="mobile-social-links__item pseudo">
-                  <a
-                    href="#"
-                    class="mobile-social-links__link link--color--accent"
-                    >Facebook
-                  </a>
-                </li>
-
-                <li class="mobile-social-links__item pseudo">
-                  <a
-                    href="#"
-                    class="mobile-social-links__link link--color--accent"
-                    >LinkedIn
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="mobile-social-links__item pseudo">
+                <a
+                  href="#"
+                  class="mobile-social-links__link link--color--accent"
+                  >LinkedIn
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -820,7 +814,7 @@
             ><span class="logo logo--accent">Web</span>Studio
           </a>
 
-          <address class="address">
+          <address class="address" id="contact">
             <ul class="address__list">
               <li class="address__item">
                 <a href="#" class="address__link address__link--place"
@@ -1033,7 +1027,6 @@
       </div>
     </div>
 
-    <script src="js/mobile-menu.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
