@@ -38,13 +38,19 @@ a {
   align-items: center;
 }
 
-.button__open-menu, .button__close-menu, .hero__button, .subscribe-form__button {
+.button__open-menu,
+.button__close-menu,
+.hero__button,
+.subscribe-form__button {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu__item, .site-nav__item, .contacts__item, .address__item {
+.mobile-menu__item,
+.site-nav__item,
+.contacts__item,
+.address__item {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -56,7 +62,9 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-links__link, .client__link, .data-form__input {
+.social-links__link,
+.client__link,
+.data-form__input {
   transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -74,7 +82,9 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__button, .subscribe-form__button, .data-form__button {
+.hero__button,
+.subscribe-form__button,
+.data-form__button {
   min-width: 200px;
   height: 50px;
   font-size: 16px;
@@ -113,11 +123,20 @@ a {
   position: absolute;
 }
 
-.data-form__button, .member-card, .project__item:hover, .project__item:focus, .modal {
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+.data-form__button,
+.member-card,
+.project__item:hover,
+.project__item:focus,
+.modal {
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
 }
 
-.hero__title, .features__subtitle, .what-doing__title, .join__subtitle, .subscribe-form__subtitle {
+.hero__title,
+.features__subtitle,
+.what-doing__title,
+.join__subtitle,
+.subscribe-form__subtitle {
   text-transform: uppercase;
 }
 
@@ -227,11 +246,11 @@ body {
   color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   --accent {
     color: #2196f3;
   }
-}
+} */
 
 .page-header__logo {
   padding: 15px 0;
@@ -307,7 +326,8 @@ body {
   color: #212121;
 }
 
-.mobile-menu__link:hover, .mobile-menu__link:focus {
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
   color: #2196f3;
 }
 
@@ -345,7 +365,8 @@ body {
   }
 }
 
-.mobile-contacts__link:hover, .mobile-contacts__link:focus {
+.mobile-contacts__link:hover,
+.mobile-contacts__link:focus {
   color: #188ce8;
 }
 
@@ -377,7 +398,8 @@ body {
   padding: 10px 0;
 }
 
-.mobile-social-links__link:hover, .mobile-social-links__link:focus {
+.mobile-social-links__link:hover,
+.mobile-social-links__link:focus {
   color: #188ce8;
 }
 
@@ -405,7 +427,8 @@ body {
   background-color: #ffffff;
 }
 
-.button__open-menu:hover, .button__open-menu:focus {
+.button__open-menu:hover,
+.button__open-menu:focus {
   fill: #188ce8;
 }
 
@@ -424,7 +447,8 @@ body {
   background-color: #ffffff;
 }
 
-.button__close-menu:hover, .button__close-menu:focus {
+.button__close-menu:hover,
+.button__close-menu:focus {
   fill: #188ce8;
 }
 
@@ -434,7 +458,8 @@ body {
   }
 }
 
-.hero__button:hover, .hero__button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: #188ce8;
 }
 
@@ -487,7 +512,8 @@ body {
   }
 }
 
-.subscribe-form__button:hover, .subscribe-form__button:focus {
+.subscribe-form__button:hover,
+.subscribe-form__button:focus {
   background-color: #188ce8;
 }
 
@@ -496,7 +522,8 @@ body {
   margin: auto;
 }
 
-.data-form__button:hover, .data-form__button:focus {
+.data-form__button:hover,
+.data-form__button:focus {
   border: 1px solid #188ce8;
   border-radius: 4px;
 }
@@ -526,7 +553,8 @@ body {
   margin-left: 50px;
 }
 
-.site-nav__link:hover, .site-nav__link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: #2196f3;
 }
 
@@ -606,7 +634,8 @@ body {
   }
 }
 
-.contacts__link:hover, .contacts__link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: #2196f3;
 }
 
@@ -672,40 +701,76 @@ body {
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bannerMob1x.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bannerMob1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
   .hero__overlays {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bannerMob2x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bannerMob2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero__overlays {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bannerTablet1x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bannerTablet1x.jpg);
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
   .hero__overlays {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bannerTablet2x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bannerTablet2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__overlays {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bannerDesc1x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bannerDesc1x.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
   .hero__overlays {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bannerDesc2x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bannerDesc2x.jpg);
   }
 }
 
@@ -990,7 +1055,8 @@ body {
   fill: #afb1b8;
 }
 
-.social-links__link:hover, .social-links__link:focus {
+.social-links__link:hover,
+.social-links__link:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
@@ -1010,7 +1076,8 @@ body {
   fill: #ffffff;
 }
 
-.social-links__link--footer:hover, .social-links__link--footer:focus {
+.social-links__link--footer:hover,
+.social-links__link--footer:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
@@ -1120,7 +1187,8 @@ body {
   fill: #afb1b8;
 }
 
-.client__link:hover, .client__link:focus {
+.client__link:hover,
+.client__link:focus {
   border-color: #2196f3;
   fill: #2196f3;
 }
@@ -1193,7 +1261,8 @@ body {
   color: #ffffff99;
 }
 
-.address__link:hover, .address__link:focus {
+.address__link:hover,
+.address__link:focus {
   color: #2196f3;
 }
 
@@ -1292,7 +1361,8 @@ body {
   justify-content: center;
 }
 
-.portfolio__list .portfolio__button:hover, .portfolio__list .portfolio__button:focus {
+.portfolio__list .portfolio__button:hover,
+.portfolio__list .portfolio__button:focus {
   background-color: #2196f3;
   color: #ffffff;
   border-radius: 4px;
@@ -1592,7 +1662,7 @@ body {
     font-size: 16px;
     line-height: 1.15;
     letter-spacing: 0.03em;
-    margin-bottom: 8x;
+    margin-bottom: 8px;
   }
 }
 
@@ -1616,7 +1686,8 @@ body {
   border-radius: 4px;
 }
 
-.data-form__input:hover, .data-form__input:focus {
+.data-form__input:hover,
+.data-form__input:focus {
   border-color: #2196f3;
 }
 
