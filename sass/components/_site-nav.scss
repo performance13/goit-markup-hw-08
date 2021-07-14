@@ -58,9 +58,9 @@
   &__list {
     display: none;
     @media screen and(min-width:768px) {
-      position: absolute;
-      top: 6px;
-      left: 147px;
+      // position: absolute;
+      // top: 6px;
+      // left: 147px;
       display: flex;
       margin-left: 88px;
 
@@ -68,10 +68,10 @@
     }
 
     @media screen and(min-width:1200px) {
-      position: absolute;
-      top: 2px;
-      left: 453px;
-      margin-left: 0;
+      // position: absolute;
+      // top: 2px;
+      // left: 453px;
+      margin-left: 93px;
     }
   }
 }
