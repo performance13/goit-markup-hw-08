@@ -33,19 +33,22 @@
   }
 }
 
-.mobile-menu {
-  &__link {
-    &--active-page {
-      color: $accent-color;
-    }
-  }
-}
+// .mobile-menu {
+//   &__link {
+//     &--active-page {
+//       color: $accent-color;
+//     }
+//   }
+// }
 
 .mobile-menu {
   &__link {
     color: getColor-text("primary");
     &:hover,
     &:focus {
+      color: $accent-color;
+    }
+    &--active-page {
       color: $accent-color;
     }
   }
