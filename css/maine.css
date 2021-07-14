@@ -106,7 +106,7 @@ a {
   text-align: center;
   width: 100%;
   height: 1px;
-  bottom: 2px;
+  bottom: 0;
   background-color: #2196f3;
   border: 2px solid;
   border-radius: 10px;
@@ -198,12 +198,6 @@ body {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 1200px) {
-  .page-header {
-    width: 1600px;
-  }
-}
-
 .page-header__border {
   height: 60px;
 }
@@ -215,11 +209,9 @@ body {
 }
 
 .page-header__container {
-  position: relative;
   display: flex;
   max-width: 100%;
   align-items: center;
-  justify-content: space-between;
 }
 
 .logo {
@@ -242,24 +234,7 @@ body {
 }
 
 .page-header__logo {
-  position: absolute;
-  top: 1px;
-  left: 15px;
   padding: 15px 0;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header__logo {
-    top: 15px;
-    left: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-header__logo {
-    top: 5px;
-    left: 215px;
-  }
 }
 
 .page-footer__logo {
@@ -300,15 +275,15 @@ body {
   letter-spacing: 0.02em;
 }
 
-.mobile-menu__link--active-page {
-  color: #2196f3;
-}
-
 .mobile-menu__link {
   color: #212121;
 }
 
 .mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #2196f3;
+}
+
+.mobile-menu__link--active-page {
   color: #2196f3;
 }
 
@@ -498,9 +473,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .site-nav__list {
-    position: absolute;
-    top: 6px;
-    left: 147px;
     display: flex;
     margin-left: 88px;
     font-weight: 500;
@@ -512,10 +484,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .site-nav__list {
-    position: absolute;
-    top: 2px;
-    left: 453px;
-    margin-left: 0;
+    margin-left: 93px;
   }
 }
 
@@ -564,12 +533,15 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts__list {
     flex-direction: row;
-    position: absolute;
-    top: 1px;
-    right: -178px;
   }
 }
 
@@ -580,6 +552,12 @@ body {
 @media screen and (min-width: 768px) {
   .contacts__item:first-child {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:first-child {
+    margin-right: 30px;
   }
 }
 
@@ -657,7 +635,6 @@ body {
 }
 
 .hero__overlays {
-  max-width: 1600px;
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -923,6 +900,12 @@ body {
 @media screen and (min-width: 768px) {
   .member-card {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .member-card {
+    width: 270px;
   }
 }
 
