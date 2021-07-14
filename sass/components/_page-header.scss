@@ -1,7 +1,7 @@
 .page-header {
   background-color: $primary-white;
   @media screen and(min-width: 1200px) {
-    width: 1600px;
+    // width: 1600px;
   }
 
   &__border {
@@ -15,11 +15,11 @@
   &__container {
     // @extend %flexible-ai;
 
-    position: relative;
+    // position: relative;
     display: flex;
     max-width: 100%;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 }
 
