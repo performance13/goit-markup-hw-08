@@ -10,7 +10,11 @@
     @include size(450px, 609px);
     padding: 40px;
   }
-  // padding: 40px;
+
+  @media screen and(min-width:1200px) {
+    @include size(528px, 581px);
+  }
+
   &__subtitle {
     color: getColor-text("primary");
     text-align: center;
@@ -20,7 +24,7 @@
     @include font(700, 16px, 1.15, 0.03em);
     // width: 210px;
     // margin-left: 25px;
-    margin-bottom: 8px;
+    // margin-bottom: 8px;
   }
 
   @media screen and(min-width:480px) {
