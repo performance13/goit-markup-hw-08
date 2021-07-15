@@ -144,11 +144,12 @@
     position: absolute;
 
     @include size(100%, 100%);
-
-    padding: 8px 20px;
     @include font(400, 18px, 1.555, 0.03em);
 
     @include color($overlay-color, $primary-white);
+
+    padding: 5px 20px;
+
     @media screen and(min-width: 480px) {
       padding: 77px 24px;
     }
