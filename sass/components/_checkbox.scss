@@ -8,15 +8,21 @@
     font-style: normal;
     text-align: center;
     color: getColor-text("secondary");
-    &__text {
-      display: inline;
-    }
+    // &__text {
+    //   display: inline;
+    //   // @media screen and(min-width:1200px) {
+    //   //   @include font(400, 14px, 1.714, 0.03em);
+    //   // }
+    // }
   }
 }
 
 .agree-newsletter {
   &__text {
     display: inline;
+    @media screen and(min-width:1200px) {
+      @include font(400, 14px, 1.714, 0.03em);
+    }
   }
 }
 
@@ -28,6 +34,9 @@
 
     text-decoration: underline;
     color: $accent-color;
+    @media screen and(min-width:1200px) {
+      @include font(400, 14px, 1.714, 0.03em);
+    }
   }
 }
 
