@@ -129,22 +129,36 @@
 .pseudo {
   &:not(:first-child) {
     &::after {
-      content: "";
-      position: absolute;
-      height: 16px;
-      bottom: 57px;
-      margin-left: -10px;
-      border: 1px solid getColor-text("pseudo");
-    }
-    @media screen and(min-width: 480px) {
-      &:not(:first-child) {
-        &::after {
-          margin-left: -20px;
-        }
+      @media screen and(min-width: 480px) {
+        content: "";
+        position: absolute;
+        height: 16px;
+        bottom: 57px;
+        border: 1px solid getColor-text("pseudo");
+        margin-left: -20px;
       }
     }
   }
 }
+// .pseudo {
+//   &:not(:first-child) {
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       height: 16px;
+//       bottom: 57px;
+//       margin-left: -10px;
+//       border: 1px solid getColor-text("pseudo");
+//     }
+//     @media screen and(min-width: 480px) {
+//       &:not(:first-child) {
+//         &::after {
+//           margin-left: -20px;
+//         }
+//       }
+//     }
+//   }
+// }
 
 // .pseudo {
 //   &:not(:first-child) {
